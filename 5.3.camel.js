@@ -1,8 +1,8 @@
 function toCamelCase(input) {
     let result = '';
-    input = input.toLowerCase()
+    input = input.toLowerCase().replace(/[_-]/g, " ")
     for(let i=0; i< input.length; i++){
-      if(input[i] === '_' || input[i] === '-'){
+      if(input[i] === " "){
         i++;
         result += input[i].toUpperCase()
       } else {
