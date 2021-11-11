@@ -1,4 +1,4 @@
-let peopleFunc = (array) => {
+let peopleFunc = (busStops) => {
     let peopleIn = 0;
     let peopleOut = 0;
       for (let i=0; i<busStops.length; i++) {
