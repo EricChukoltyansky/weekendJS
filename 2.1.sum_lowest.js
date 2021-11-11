@@ -1,10 +1,6 @@
-let lowestSum = (arr) => {
-  let sum = 0;
-  let sortedArr = arr.sort((a, b) => a - b);
-  for(i of sortedArr) {
-      sum = sortedArr[i] + sorted[i+1]
-  }
-return sum
+let lowestSum = (numbers) => {
+  numbers.sort((a,b) => a - b).filter(x => x>0);
+  return numbers[0] + numbers[1];
 }
 
 console.log(lowestSum([19, 5, 42, 2, 77]));
