@@ -1,5 +1,6 @@
 let longest = (str) => {
-    return Math.max(...str.split(' ').map(word => word.length));
+    str = str.split(" ");
+   return str.sort((a, b) => b.length - a.length)[0]
 }
 
 console.log(longest("Hello nice toe meet you"));
