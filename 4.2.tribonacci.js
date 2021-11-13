@@ -1,12 +1,11 @@
-let tribonacci = (n) => {
-  arr = [];
-  arr[0] = 1;
-  arr[1] = 1;
-  arr[2] = 1;
+let tribonacci = (signature,n) => {
+  let signature =
+  let arr = []
+  
   for (i = 3; i <= n; i++) {
-    arr[i] = arr[i - 1] + arr[i - 2] + arr[i - 3];
+    arr[i] = signature[i - 1] + signature[i - 2] + signature[i - 3];
   }
-  return arr[n];
+  return arr
 };
 
 console.log(tribonacci(9));
